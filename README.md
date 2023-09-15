@@ -7,6 +7,7 @@
 
 ### how to start
 - clone this repo
+- run `cp .env.sample .env`
 - run `docker compose up`
 
 ### sample query

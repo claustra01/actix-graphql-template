@@ -5,6 +5,10 @@
 - diesel
 - postgres
 
+### how to start
+- clone this repo
+- run `docker compose up`
+
 ### sample query
 ```
 query {

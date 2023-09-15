@@ -15,3 +15,8 @@ query {
     echo(message: "hello")
 }
 ```
+
+### if you do not need diesel
+- remove `db.rs`
+- cleanup `main.rs`
+- remove dependencies: `diesel`, `anyhow`, `dotenv`

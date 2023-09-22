@@ -17,7 +17,5 @@ query {
 }
 ```
 
-### if you do not need diesel
-- remove `db.rs`
-- cleanup `main.rs`
-- remove dependencies: `diesel`, `anyhow`, `dotenv`
+### if you do not use diesel or postgres
+- edit `db.rs`

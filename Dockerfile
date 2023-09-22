@@ -6,4 +6,4 @@ COPY . .
 EXPOSE 8080
 
 RUN cargo build --release
-ENTRYPOINT ["./target/release/hackz-tyranno"]
+ENTRYPOINT ["./target/release/graphql-template"]

@@ -916,8 +916,12 @@ dependencies = [
  "anyhow",
  "async-graphql",
  "async-graphql-actix-web",
+ "async-stream",
  "diesel",
  "dotenv",
+ "futures-util",
+ "once_cell",
+ "tokio",
 ]
 
 [[package]]

@@ -16,6 +16,16 @@ query {
     echo(message: "hello")
 }
 ```
+```
+mutation {
+    post(message: "hello")
+}
+```
+```
+subscription {
+    subscribe
+}
+```
 
 ### if you do not use diesel or postgres
 - edit `db.rs`

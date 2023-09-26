@@ -20,9 +20,11 @@ async fn index_graphiql() -> Result<HttpResponse> {
 async fn main() -> std::io::Result<()> {
 
   // DB connection
-  db::connection().expect("Failed to connect to database");
+  let pool: db::Pool = db::establish_connection();
 
-  let schema = Schema::build(Query, EmptyMutation, EmptySubscription).finish();
+  let schema = Schema::build(Query, EmptyMutation, EmptySubscription)
+    .data(pool.clone())
+    .finish();
 
   println!("GraphiQL: http://localhost:8080");
 

@@ -10,5 +10,5 @@ actix-web = "4.3.1"
 anyhow = "1.0.75"
 async-graphql = "6.0.4"
 async-graphql-actix-web = "6.0.4"
-diesel = {version = "2.1.1", features = ["postgres"]}
+diesel = {version = "2.1.1", features = ["postgres", "r2d2"]}
 dotenv = "0.15.0"

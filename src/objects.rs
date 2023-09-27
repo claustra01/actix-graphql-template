@@ -10,11 +10,6 @@ pub struct Mutation;
 pub struct Subscription;
 pub type QuerySchema = Schema<Query, Mutation, Subscription>;
 
-#[derive(SimpleObject)]
-pub struct Post {
-  pub text: String,
-}
-
 #[Object]
 impl Query {
   async fn echo<'ctx>(&self, ctx: &Context<'ctx>, message: String) -> String {

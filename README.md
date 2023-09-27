@@ -3,7 +3,6 @@
 - actix-web
 - async-graphql
 - diesel
-- postgres
 
 ### how to start
 - clone this repo
